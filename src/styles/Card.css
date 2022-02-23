@@ -1,0 +1,61 @@
+.Card{
+    @apply relative w-sm-s text-xl bg-primary-300 px-5 py-6 rounded-lg text-center;
+}
+.Card .advice{
+    @apply text-center text-xl font-bold text-primary-200 my-6;
+}
+.Card .svg-div{
+    @apply absolute cursor-pointer p-3 bg-primary-100 rounded-full flex justify-center items-center;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%,-10%);
+    transition: 0.4s ease-in-out;
+}
+
+
+.Card .svg-div:active{
+    transform: translate(-50%,-10%) rotate(360deg);
+}
+
+.Card .Card-text{
+    @apply text-base font-bold text-primary-100 uppercase tracking-widest;
+}
+
+.Card footer{
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card footer::after{
+    content: '';
+    height: 0.8px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.231);
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translate(-0%,-50%);
+}
+.Card footer::before{
+    content: '';
+    height: 0.8px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.231);
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translate(-0%,-50%);
+}
+
+
+.Card footer span{
+    display: inline-block;
+    width: 5px;
+    border-radius: 30px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 5px;
+}
